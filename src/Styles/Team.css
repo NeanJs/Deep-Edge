@@ -1,0 +1,97 @@
+.team {
+	width: 100vw;
+	height: 80vh;
+	margin: 5vh auto;
+	font-family: "Poppins", sans-serif;
+}
+
+.team__wrapper {
+	width: 90vw;
+	margin: 0 auto;
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.team__headerContainer {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	height: 30%;
+	text-align: center;
+}
+.team__title {
+	color: #6357ff;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 24px;
+	opacity: 0.8;
+	text-align: center;
+}
+.team__header {
+	font-size: 60px;
+	font-weight: 400;
+	text-align: center;
+	letter-spacing: 1.2px;
+	color: #222222;
+	text-transform: capitalize;
+}
+.team__Container {
+	display: grid;
+	width: 100%;
+	grid-template-columns: repeat(4, 1fr);
+	place-items: center;
+}
+.teamCard {
+	width: 250px;
+
+	overflow: hidden;
+	height: 350px;
+	display: flex;
+	flex-direction: column;
+}
+.team__img {
+	width: 100%;
+	object-fit: cover;
+	object-position: top center;
+}
+.infoCard {
+	background-color: #6357ff;
+	overflow: hidden;
+	display: flex;
+	height: 30%;
+	padding: 0 10px;
+	align-items: center;
+	color: #f8f8f8;
+	justify-content: space-between;
+}
+.titleJob {
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+	justify-content: center;
+	gap: 4px;
+}
+.name {
+	font-weight: 400;
+}
+.descriptionJob {
+	font-weight: 400;
+}
+.socialLinks {
+	display: flex;
+	align-items: center;
+	width: 30%;
+	justify-content: space-between;
+}
+@media screen and (max-width: 1000px) {
+	.team {
+		height: 100%;
+	}
+
+	.team__Container {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+}

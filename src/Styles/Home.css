@@ -1,0 +1,153 @@
+.homePage {
+	width: 100vw;
+	height: 100vh;
+	background: #6357ff;
+}
+.halfBg {
+	float: right;
+	height: 100%;
+	background-position: center;
+	object-fit: cover;
+	width: 60%;
+	opacity: 0.6;
+}
+.homePage__navigation {
+	display: flex;
+	width: 98vw;
+	height: 8vh;
+	position: absolute;
+
+	top: 0;
+	right: 0%;
+
+	align-items: center;
+	justify-content: space-between;
+}
+.logo {
+	font-family: "Texturina", serif;
+	font-size: 24px;
+	color: #f8f8f8;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: left;
+	letter-spacing: 2px;
+}
+.logo::after {
+	content: "EDGE";
+	font-size: 12px;
+	letter-spacing: 1.1px;
+	margin-top: -10px;
+}
+.socialMedia__container {
+	width: 10%;
+	height: 100%;
+
+	background-color: #6357ff;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+.socialMedia__container > a {
+	color: #f8f8f8;
+	font-size: 20px;
+	transition: all 0.3s;
+}
+.socialMedia__container > a:hover {
+	color: black;
+}
+.homePage__main {
+	height: 100%;
+	align-items: center;
+	display: flex;
+	width: 40%;
+	justify-content: center;
+}
+.main__Contents {
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	color: #f8f8f8;
+	text-align: left;
+	font-family: "Poppins", sans-serif;
+	height: 40%;
+	justify-content: space-between;
+}
+.content__intro {
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+.content__title {
+	width: 120%;
+	font-size: 64px;
+	font-weight: 500;
+}
+.content__description {
+	font-size: 20px;
+	word-spacing: 1px;
+	line-break: 15px;
+}
+.getStarted {
+	width: 40%;
+	height: 60px;
+	font-weight: 600;
+	font-family: "Poppins", sans-serif;
+	letter-spacing: 2px;
+	border-radius: 4px;
+	background-color: #f8f8f8;
+	font-size: 14px;
+	outline: none;
+	cursor: pointer;
+	border: 2px solid transparent;
+	color: #6357ff;
+	transition: all 0.3s ease-in-out;
+}
+
+.getStarted:hover {
+	background-color: transparent;
+	border: 2px solid #f8f8f8;
+	color: #f8f8f8;
+}
+@media screen and (max-width: 1000px) {
+	.halfBg {
+		width: 100%;
+		z-index: 1;
+		pointer-events: none;
+		opacity: 0.1;
+		position: absolute;
+	}
+
+	.socialMedia__container {
+		flex: 0.3;
+	}
+	.homePage__main {
+		width: 100%;
+		height: 100%;
+	}
+	.main__Contents {
+		max-height: 100%;
+		height: 70%;
+		justify-content: center;
+		gap: 1rem;
+	}
+	.content__intro {
+		max-width: 100%;
+		height: 10%;
+	}
+	.content__title {
+		max-width: 100%;
+		max-height: 60%;
+		font-size: 50px;
+	}
+	.content__description {
+		max-width: 100%;
+		max-height: 30%;
+		font-size: 16px;
+	}
+}
+@media screen and (max-width: 500px) {
+	.socialMedia__container {
+		display: none;
+	}
+}
