@@ -155,17 +155,21 @@ textarea:focus {
 	}
 	.contact__right {
 		height: 20vh;
-		float: none;
-		transform: none;
+		width: 100vw;
+		display: flex;
+		justify-content: center;
 	}
 	.contactDetails {
 		transform: translateX(0%);
-		width: 100vw;
+		width: 90%;
 		font-size: 12px;
 		display: flex;
 		text-align: left;
 		flex-direction: row;
 		align-items: center;
-		justify-content: space-between;
+		justify-content: space-evenly;
+	}
+	.titleContact {
+		flex-wrap: wrap;
 	}
 }

@@ -1,9 +1,12 @@
 import React from "react";
 import "../Styles/Home.css";
+import $ from "jquery";
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 function Home() {
 	return (
 		<div className="homePage">
+			
+			
 			<img
 				className="halfBg"
 				src="https://images.unsplash.com/photo-1568359415889-fbe562be5ea1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80"

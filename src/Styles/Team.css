@@ -49,7 +49,9 @@
 	height: 350px;
 	display: flex;
 	flex-direction: column;
+	cursor: pointer;
 }
+
 .team__img {
 	width: 100%;
 	object-fit: cover;

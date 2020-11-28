@@ -1,15 +1,24 @@
 .about {
 	height: 100vh;
 	width: 100vw;
-	background-color: #f8f8f8;
 }
-.section__left {
-	width: 50%;
+.about__Sections {
+	display: flex;
+	width: 100vw;
 	height: 100vh;
+}
+.about__left {
+	width: 50%;
+	height: 100%;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
 	background-color: #222222;
+}
+.about__Right {
+	width: 50%;
+	background-color: #f8f8f8;
+	height: 100%;
 }
 .textContainer {
 	display: flex;
@@ -52,7 +61,7 @@
 	box-shadow: 10px 6px 10px;
 }
 @media screen and (max-width: 1200px) {
-	.section__left {
+	.about__left {
 		width: 100%;
 	}
 	.floatingImg {
@@ -78,5 +87,8 @@
 	.about__description {
 		font-size: 14px;
 		max-height: 70%;
+	}
+	.about__Right {
+		width: 0%;
 	}
 }
