@@ -90,19 +90,35 @@ textarea:focus {
 .contact__right {
 	background-color: #6357ff;
 	width: 40%;
-	height: 100%;
+	height: 100vh;
+	justify-content: space-around;
 	display: flex;
+	flex-direction: column;
 }
 .contactDetails {
 	width: 100%;
 	text-align: right;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-around;
 	float: right;
-	gap: 1.4rem;
-	transform: translateX(60%);
-	height: 100%;
+	height: 60%;
+	gap: 2rem;
+	transform: translate(60%, 3%);
+}
+.contactHeader {
+	width: 80%;
+	height: 10%;
+	margin: 0 auto;
+	text-align: center;
+	font-family: "Poppins", sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	letter-spacing: 1.2px;
+	color: #f8f8f8;
 }
 .contactDetails > div {
 	font-family: "Poppins", sans-serif;
@@ -111,6 +127,7 @@ textarea:focus {
 	display: flex;
 	flex-direction: column;
 	color: #f8f8f8;
+
 	justify-content: space-around;
 }
 .titleContact,
@@ -134,6 +151,20 @@ textarea:focus {
 	right: 20%;
 	top: 500%;
 	box-shadow: 0px 0px 10px;
+}
+.socialMedia {
+	display: flex;
+	width: 100%;
+
+	height: 10%;
+	justify-content: center;
+	margin: 0 auto;
+	align-items: center;
+	gap: 2rem;
+}
+.socialMedia__link {
+	color: #f8f8f8;
+	font-size: 30px;
 }
 @media screen and (max-width: 1000px) {
 	.contact__sections {
@@ -161,15 +192,25 @@ textarea:focus {
 	}
 	.contactDetails {
 		transform: translateX(0%);
-		width: 90%;
+		width: 95vw;
+		height: 100%;
 		font-size: 12px;
 		display: flex;
-		text-align: left;
+		margin: 0 auto;
 		flex-direction: row;
 		align-items: center;
-		justify-content: space-evenly;
 	}
 	.titleContact {
 		flex-wrap: wrap;
+		margin: 0 auto;
+	}
+	.descriptionContact {
+		text-align: center;
+	}
+	.contactHeader {
+		display: none;
+	}
+	.socialMedia__link {
+		display: none;
 	}
 }

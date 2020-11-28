@@ -1,5 +1,13 @@
 import React from "react";
-import { FaLandmark, FaMailBulk, FaPhone } from "react-icons/fa";
+import {
+	FaFacebook,
+	FaFacebookF,
+	FaInstagram,
+	FaLandmark,
+	FaMailBulk,
+	FaPhone,
+	FaTwitter,
+} from "react-icons/fa";
 import "../Styles/Contact.css";
 function Contact() {
 	return (
@@ -20,6 +28,9 @@ function Contact() {
 				</div>
 				<div className="contact__right">
 					<img className="maps" src={require("../images/maps.JPG")} alt="map" />
+					<h4 className="contactHeader">
+						For further business inquiries, you can contact us via:
+					</h4>
 					<div className="contactDetails">
 						<div className="phone">
 							<h4 className="titleContact">
@@ -44,6 +55,11 @@ function Contact() {
 							<h5 className="descriptionContact">Stree 12, Dallas, Texas</h5>
 						</div>
 					</div>
+					<ul className="socialMedia">
+						<FaFacebookF className="socialMedia__link" />
+						<FaInstagram className="socialMedia__link" />
+						<FaTwitter className="socialMedia__link" />
+					</ul>
 				</div>
 			</div>
 		</div>
