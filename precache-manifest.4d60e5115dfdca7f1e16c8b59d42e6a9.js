@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5b780e746cadc4a8f4ef9d2d7630077e",
+    "revision": "128a9667919ed99ccc231e81435bd25a",
     "url": "/Deep-Edge/index.html"
   },
   {
-    "revision": "de0b5c2edbd49741d614",
-    "url": "/Deep-Edge/static/css/main.f8511008.chunk.css"
+    "revision": "38d7440654ae6341acd7",
+    "url": "/Deep-Edge/static/css/main.617e701a.chunk.css"
   },
   {
     "revision": "64867b08a199471f28ad",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Deep-Edge/static/js/2.049e9a8c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "de0b5c2edbd49741d614",
-    "url": "/Deep-Edge/static/js/main.6a7d9f9f.chunk.js"
+    "revision": "38d7440654ae6341acd7",
+    "url": "/Deep-Edge/static/js/main.8eaf7d8f.chunk.js"
   },
   {
     "revision": "4fc3440e564c8bd8b62c",
