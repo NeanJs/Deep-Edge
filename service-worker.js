@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Deep-Edge/precache-manifest.ea9d79c099a885013fb3c0d99bc2aca0.js"
+  "/Deep-Edge/precache-manifest.1d40da1cebe652692dcdd2ac7d9293c6.js"
 );
 
 self.addEventListener('message', (event) => {
